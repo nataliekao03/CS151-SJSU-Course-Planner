@@ -2,10 +2,29 @@
 SJSU Course Planner 
 
 # Team Information
-Team #5: Natalie Kao, Jisoo Kim, Shreyas Prabhudev <br />
-Team member working on the proposal: Natalie Kao, Jisoo Kim, Shreyas Prabhudev
+**Team #5:** Natalie Kao, Jisoo Kim, Shreyas Prabhudev <br />
 
-# Problem/issue to resolve
+**Proposal Contribution:** 
+<br />Natalie Kao - Edited and updated final proposal. Completed Steps to run your code, solution, operations, state diagram, use case diagram.
+<br />Jisoo Kim -  Completed steps to run the code, class diagram, and readme file for the first proposal where we explain what our diagrams represent. Helped edit the final proposal as well. Help come up with the operations and functionality of our project idea. 
+<br />Shreyas Prabhudev - Created initial proposal for mid point check in and added in the sequence diagram as well as editing the other sections
+
+**Presentation Contribution:** 
+<br /> Natalie Kao - Create slides and talk about student operations
+<br /> Jisoo Kim - Create slides and in charge of admin operations. Also in charge of the home page design with an image that has a path way to sign up and log in. 
+<br /> Shreyas Prabhudev - Create slides and will discuss how the different pages interact and the operations for student and advisor
+
+**Project Code Contribution:** 
+<br />Natalie Kao - Implement majority of back end and MVC pattern, create StudentPage and implement methods for each selection 
+<br />Jisoo Kim - Implemented majority of the front end (home page and admin page), implemented methods that each role can perform, helped with creating a login and sign up system that stores the user data into a txt file. Also worked on password exceptions to make sure that we have requirements to set up a strong password. 
+<br />Shreyas Prabhudev - Implemented cross page functionality to sync the different login/signup views with the buttons and connect it to a text backend; validated user logins and created methods to read/write from files for users; created and wrote to individual files for the courses that each student takes and which ones they removed
+
+**Report Contribution:** 
+<br /> Natalie Kao - Created and made entire report; made use case and state diagrams
+<br /> Jisoo Kim - Edited and fixed operations; made class diagram
+<br /> Shreyas Prabhudev - Edited by adding assumptions and high-level description; made sequence diagram
+
+# Problem/Issue to Resolve
 SJSU students need a better way to plan and organize their courses to complete their degree requirements efficiently, where all the information can be found at one place.  
 	
 # Previous works
@@ -18,32 +37,26 @@ The course planning website will be designed for SJSU students, but faculty memb
 # High-level description of Solution (plan, approach, etc) 
 The proposed course planning website will provide a comprehensive platform for students to plan and organize their courses. Some features include course catalog, course descriptions, Syllabus, Professor names, course availability information, and course planning tools. We will be using OOP concepts including inheritance, to extend information from a base class (Administration) to sub classes, Student, Professors, and Advisors and implement methods, and also polymorphism, abstraction, and encapsulation to create our methods and classes.
 
+# Diagrams
+| File Name  | Summary    | 
+| ---------- | ---------- | 
+| [classDiagram.pdf](https://github.com/shreyasprabhudev/CS151-SJSU-Course-Planner/blob/main/diagrams/classDiagram.pdf) | UML class diagrams represent the structure of a system by showing the classes, their attributes, operations or methods, and the relationships among them. It illustrates the object-oriented programming concepts such as inheritance, abstraction, and association. Additionally, the UML class diagram also shows the access modifiers for class members such as public, private, and protected, which indicate the visibility and accessibility of the attributes and methods to other classes.  | 
+| [useCaseDiagram.pdf](https://github.com/shreyasprabhudev/CS151-SJSU-Course-Planner/blob/main/diagrams/usecase%20diagram.pdf) | Use case diagrams represent the functional requirements of a system by illustrating the interactions between the system and its users or external entities. It is a sequence of actions performed by the user or the system to achieve a specific goal. The use case diagram depicts the users who interact with the system, use cases that the system provides, and the relationships between them. The users are represented as stick figures, while the use cases are represented as ovals. Their relationships are shown as solid lines, which indicates the communication or interaction between them. | 
+| [stateDiagram.pdf](https://github.com/shreyasprabhudev/CS151-SJSU-Course-Planner/blob/main/diagrams/stateDiagram.pdf) | State diagrams represent the behavior of a system or an object by modeling its states and transitions between them. It states that the system can enter, depending on the user’s actions. They also depict the states as rectangles and transitions as arrows labeled with triggering events and conditions. It also includes entry and exit actions, composite states, and concurrent states. The purpose of the state diagram is to help understand the system’s dynamics and identify potential problems by modeling the behavior of complex systems. | 
+| [sequenceDiagram.pdf](https://github.com/shreyasprabhudev/CS151-SJSU-Course-Planner/blob/main/diagrams/Sequence%20Diagram.pdf) | Sequence diagrams represent the interactions between objects in a system by illustrating the messages exchanged between them over time. To be more exact, it illustrates the interaction between the user, GUI, and system over time. The objects are shown in vertical lifelines and events (messages) as horizontal arrows between them. In this case, Students, Professors, Advisors, and Administrators are shown as the User. This diagram provides a dynamic view of the system’s behavior and is useful in system design, testing, and debugging. |
+
+
 # Functionality
-Our website provides a quicker and more efficient platform for students to see all the class description, availability, syllabus, and pre reqs before adding the class. For example, students will no longer need to email specific professors to figure out if he/she is teaching that specific class or research separately to find syllabus. It will add, update, and delete students, professors, subjects/classes and be up to date if any changes are made. 
-One unique function that this planner has is that the user can drag-and-drop their classes into certain “slots” for every semester, allowing them to visually see which required classes they have added and which ones they have left. The drag-and-drop feature allows them to quickly and seamlessly make edits to their schedule.
+Our website provides a quicker and more efficient platform for students to see all the class description, availability, syllabus, and pre reqs before adding the class. It will add, update, and delete students, subjects/classes and be up to date if any changes are made. 
 
 # Operations
-Potential Classes [1]:
-* Administration: oversees the entire course planner and has access to all permissions to edit professors and/or students
-* Advisor: can assist students with planning out courses by editing their plans but has no additional permissions
-* Student: can edit their own course plan but has no additional permissions
-* Professor: can edit the courses they are teaching but does not have any other permissions
-* Special Operation: drag-and-drop feature for each student according to their major to see which classes are mandatory to take. 
-
 As students, they will be able to: 
-* See the list of courses that are organized by department and course number
-* See detailed information about each course
-* Includes prerequisite, objectives, required texts, when the course is offered (Fall, Winter, Spring, Summer), and units. See past syllabus for each course & Professor’s name for each course. Total estimate amount of seats available for each course 
-* Able to see mandatory classes left to take in order to graduate (drag & drop feature)
+* See the list of courses that are organized by department and course number (drop down and scroll menu)
+* Include course names, numbers, and units
+* Able to see mandatory classes left to take in order to graduate 
 * Add and delete courses 
-* Have student ID for login and password (attribute), enter estimate graduation sem/year
-* Able to see who their assigned advisor is depending on student’s last 2 digit of their ID
-
-As professors, they will be able to: 
-* Have teacher ID for login and password 
-* Update their name under the course that they will be teaching (past records will be default)
-* Have ability to add their syllabus and required text
-* See all the courses offered for each department 
+* Have student ID for login and password (attribute)
+* Able to see who their assigned advisor
 
 As advisors, they will be able to: 
 * Have advisor ID for login and password 
@@ -54,11 +67,41 @@ As advisors, they will be able to:
 
 As administrations, they will be able to: 
 * Have administration ID for login and password 
-* Ability to create/delete accounts for professors, students, and advisors 
+* Ability to create/delete accounts for students and advisors 
 * Ability to add/delete courses
-* As well as all the required information for each courses: prerequisite, objectives, required texts, when the course is offered, and units
 * Ability to add Professors under each courses
 * Ability to see and edit all student’s planner 
 
-Other References:
+# Solution
+The proposed course planning website will provide a comprehensive platform for students to plan and organize their courses and also view who their advisor is. Features include viewing each major and its corresponding courses and being able to add or remove courses into their planner. Users will be able to select a role and by their user type, a unique ID will be generated based on their role type. We began by first creating the front end, getting our login and sign up page to work as well as storing each user’s information in a txt file. We then developed smaller components and began to implement the classes for each user and the different screens depending on the user type. Then, we planned how to connect all the pages together to get the GUI and backend working along with each other while implementing the needed methods for each class. 
+
+# Steps to Run Code on VSCode
+1. Go to github link: https://github.com/shreyasprabhudev/CS151-SJSU-Course-Planner and copy link to clone
+2. Open VSCode. Select Clone Git Repository and select folder where you want to save the project
+3. Go to SJSUCoursePlanner, go to src/plannerWeb/Planner and press Run.
+4. To create a Student/Admin/Advisor Account, go to Sign Up → Student/Admin/Advisor → Enter Details
+5. Log in with your created credentials
+
+# Snapshots of Running Program
+Note: Due to the sheer amount of screens due to the numerous options each user have, only the home page, sign up page, and dashboard screens will be shown here.
+
+Home Page - What is shown immediately when running the program
+
+![Screenshot (229)](https://user-images.githubusercontent.com/114033045/236166876-19e175c6-d46a-4a80-a225-38a28f6be4c5.png)
+
+Select User Screen upon choosing Sign Up
+![Screenshot (231)](https://user-images.githubusercontent.com/114033045/236167121-1072f867-0b0a-48e4-aa83-b5c42cf3c2fd.png)
+
+Student Page 
+<img width="1400" alt="Screenshot_2023-05-09_at_3 14 10_PM" src="https://github.com/shreyasprabhudev/CS151-SJSU-Course-Planner/assets/114033045/94c1851b-15b8-4a31-be1c-036b91abf78f">
+Admin Page 
+<img width="1398" alt="Screenshot_2023-05-09_at_3 21 20_PM" src="https://github.com/shreyasprabhudev/CS151-SJSU-Course-Planner/assets/114033045/a3f17b31-6b80-480f-b876-edec29312699">
+
+
+Advisor page viewing Student's page
+<img width="1401" alt="Screenshot_2023-05-09_at_3 17 42_PM" src="https://github.com/shreyasprabhudev/CS151-SJSU-Course-Planner/assets/114033045/3565f08a-a9ea-4bbb-8b65-367de713d703">
+
+<img width="1392" alt="Screenshot_2023-05-09_at_3 30 17_PM" src="https://github.com/shreyasprabhudev/CS151-SJSU-Course-Planner/assets/114033045/d273092b-d6d3-47f8-93a5-f94e6e0a3e03">
+
+# Other References:
 [1] https://1000projects.org/course-planning-project-java.html
